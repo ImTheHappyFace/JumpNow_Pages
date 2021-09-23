@@ -14,22 +14,28 @@
 
 <body>
     <main class="main_static">
+        <div class="btn_close">
+            <button onclick="closeMenu()" class="btn_menu btn_cross" id="btn_close"> <i
+                    class="fas fa-times"></i></button>
+        </div>
         <header class="header_dashboard">
             <div class="header_main">
                 <div class="menu_text">
                     <div class="menu hamburger-menu">
-                        <input id="menu__toggle" type="checkbox" />
-                        <label class="menu__btn" for="menu__toggle">
-                            <span class="ham_span"></span>
-                        </label>
+                        <button class="btn_menu btn_ham" id="btn_ham"><i class="fas fa-bars"
+                                onclick="openMenu()"></i></button>
+                        <!-- <input id="menu__toggle" type="checkbox" />
+                        <label class="menu__btn" for="menu__toggle" > -->
+                        <!-- <span class="ham_span"></span> -->
+                        <!-- </label> -->
 
-                        <ul class="menu__box">
+                        <ul class="menu__box" id="menu_box">
                             <div class="image_head">
                                 <img src="./assets/images/logo/logo.png" alt="" height="40px" width="170px">
                             </div>
                             <div class="profile">
                                 <div class="profile_image">
-                                    <img src="./assets/images/Profiles/Group 450@2x.png" alt="" >
+                                    <img src="./assets/images/Profiles/Group 450@2x.png" alt="">
                                 </div>
                                 <div class="profile_info">
                                     <div class="user_name">
@@ -44,16 +50,43 @@
                                         <i class="fas fa-angle-down"></i>
                                     </div>
                                 </div>
-                                <div class="notification_sidebar">
+                                <!-- <div class="notification_sidebar">
                                     <img src="./assets/images/notifications/dm.svg" alt="" height="30px" width="30px">
                                     <img src="./assets/images/notifications/love.svg" alt="" height="30px" width="30px">
+                                </div> -->
+                                <div class="noti_icons">
+                                    <div class="noti_icon_1">
+                                        <img src="./assets/images/notifications/dm.svg" alt="" height="20px" width="20px">
+                                    </div>
+                                    <div class="noti_icon_2">
+                                        <img src="./assets/images/notifications/love.svg" alt="" height="20px" width="20px">
+                                    </div>
                                 </div>
+                                <!--  -->
                             </div>
-                            <li><a class="menu__item" href="#dashboard"> <i class="fas fa-chart-line"></i>&nbsp; Dashboard</a></li>
-                            <li><a class="menu__item" href="#"> <i class="far fa-folder-open"></i>&nbsp; Companies</a></li>
-                            <li><a class="menu__item" href="#"> <i class="fas fa-share-alt"></i>&nbsp; Socials</a></li>
-                            <li><a class="menu__item" href="#"> <i class="fas fa-money-check-alt"></i> &nbsp;Payment</a></li>
-                            <li><a class="menu__item" href="#"><i class="fas fa-user-circle"></i> &nbsp;Profiles</a></li>
+                            <li><a class="menu__item" href="#dashboard">
+                                    <div class="icon_sidebar"><i class="fas fa-chart-line icons_sidebar"></i></div>
+                                    Dashboard
+                                </a></li>
+                            <li><a class="menu__item" href="#">
+                                    <div class="icon_sidebar"><i class="far fa-folder-open icons_camp"></i> </div>
+                                    Campaigns
+                                </a>
+                            </li>
+                            <li><a class="menu__item" href="#">
+                                    <div class="icon_sidebar"><i class="fas fa-share-alt icons_socials"></i></div>
+                                    Socials
+                                </a></li>
+                            <li><a class="menu__item" href="#">
+                                    <div class="icon_sidebar"><i class="fas fa-money-check-alt icons_payment"></i>
+                                    </div> Payment
+                                </a>
+                            </li>
+                            <li><a class="menu__item" href="#">
+                                    <div class="icon_sidebar"><i class="fas fa-user-circle icons_profiles"></i></div>
+                                    Profiles
+                                </a>
+                            </li>
 
                             <div class="sign_out">
                                 <i class="fas fa-sign-out-alt"></i> <span>Sign Out</span>
@@ -65,8 +98,30 @@
                         <div class="jn_text"><span>Welcome to jumpNow</span></div>
                     </div>
                 </div>
-                <div class="side_dots">
-                    <i class="fas fa-ellipsis-v"></i>
+                <div class="side_dots side_notification">
+                    <div class="notification_nav_right">
+                        <!-- <div class="noti_icons"> -->
+                            <div class="noti_icon_1">
+                                <img src="./assets/images/notifications/dm.svg" alt="" height="20px" width="20px">
+                            </div>
+                            <div class="noti_icon_2">
+                                <img src="./assets/images/notifications/love.svg" alt="" height="20px" width="20px">
+                            </div>
+                        <!-- </div> -->
+
+                            <div class="right_side_profile_info">
+                                <div class="profile_image_nav">
+                                    <img src="./assets/images/Profiles/Group 450@2x.png" alt="">
+                                </div>
+                                <div class="profile_info_right">
+                                    <span class="user_name_main">Sarah Rey  <button> &#9660; </button> </span>
+                                    <span class="user_amount_main">$100.00</span>
+                                </div>
+                            </div>
+
+                    </div>
+
+                    <i class="fas fa-ellipsis-v mobile_dots"></i>
                 </div>
             </div>
         </header>
@@ -76,62 +131,69 @@
             <div class="social_icons">
                 <div class="icon_set_1">
                     <!-- Icon 1 -->
-                    <div class="icons_card card_1">
-                        <div class="icon_main">
-                            <img class="img_social" src="./assets/images/socials/facebook.png" alt="">
+                    <div class="icon_set_container">
+                        <div class="icons_card card_1">
+                            <div class="icon_main">
+                                <img class="img_social" src="./assets/images/socials/facebook.png" alt="">
+                            </div>
+                            <div class="icon_desc">
+                                Facebook
+                            </div>
+                            <div class="icon_plus">
+                                <img class="plus_icon" src="./assets/images/others/plus.png" alt="">
+                            </div>
                         </div>
-                        <div class="icon_desc">
-                            Facebook
-                        </div>
-                        <div class="icon_plus">
-                            <img class="plus_icon" src="./assets/images/others/plus.png" alt="">
-                        </div>
+                        <span class="icon_set_border set_1"></span>
                     </div>
-                    <span class="bottom_line"></span>
-                    <div>
 
-                    </div>
 
                     <!-- Icon-2 -->
-                    <div class="icons_card card_2">
-                        <div class="icon_main">
-                            <img class="img_social" src="./assets/images/socials/twitter.png" alt="">
+                    <div class="icon_set_container">
+                        <div class="icons_card card_2">
+                            <div class="icon_main">
+                                <img class="img_social" src="./assets/images/socials/twitter.png" alt="">
+                            </div>
+                            <div class="icon_desc twitter">
+                                Twitter
+                            </div>
+                            <div class="icon_plus">
+                                <img class="plus_icon" src="./assets/images/others/plus.png" alt="">
+                            </div>
                         </div>
-                        <div class="icon_desc twitter">
-                            Twitter
-                        </div>
-                        <div class="icon_plus">
-                            <img class="plus_icon" src="./assets/images/others/plus.png" alt="">
-                        </div>
-                        <span class="bottom_line"></span>
+                        <span class="icon_set_border set_2"></span>
                     </div>
+                    
                 </div>
                 <div class="icon_set_2">
                     <!-- Icon-2 -->
-                    <div class="icons_card card_3">
-                        <div class="icon_main">
-                            <img class="img_social" src="./assets/images/socials/instagram.png" alt="">
+                    <div class="icon_set_container">
+                        <div class="icons_card card_3">
+                            <div class="icon_main">
+                                <img class="img_social" src="./assets/images/socials/instagram.png" alt="">
+                            </div>
+                            <div class="icon_desc">
+                                Instagram
+                            </div>
+                            <div class="icon_plus">
+                                <img class="plus_icon" src="./assets/images/others/plus.png" alt="">
+                            </div>
                         </div>
-                        <div class="icon_desc">
-                            Instagram
-                        </div>
-                        <div class="icon_plus">
-                            <img class="plus_icon" src="./assets/images/others/plus.png" alt="">
-                        </div>
-                        <span class="bottom_line"></span>
+                        <span class="icon_set_border set_3"></span>
                     </div>
                     <!-- Icon-4 -->
-                    <div class="icons_card card_4">
-                        <div class="icon_main">
-                            <img class="img_social" src="./assets/images/socials/youtube.png" alt="">
+                    <div class="icon_set_container">
+                        <div class="icons_card card_4">
+                            <div class="icon_main">
+                                <img class="img_social" src="./assets/images/socials/youtube.png" alt="">
+                            </div>
+                            <div class="icon_desc">
+                                Youtube
+                            </div>
+                            <div class="icon_plus">
+                                <img class="plus_icon" src="./assets/images/others/plus.png" alt="">
+                            </div>
                         </div>
-                        <div class="icon_desc">
-                            Youtube
-                        </div>
-                        <div class="icon_plus">
-                            <img class="plus_icon" src="./assets/images/others/plus.png" alt="">
-                        </div>
-                        <span class="bottom_line"></span>
+                        <span class="icon_set_border set_4"></span>
                     </div>
                 </div>
             </div>
@@ -173,7 +235,7 @@
 
 
 
-    <script src="./js/dashboard.js"></script>
+    <script src="./js/dashboard.js"> </script>
 </body>
 
 </html>
