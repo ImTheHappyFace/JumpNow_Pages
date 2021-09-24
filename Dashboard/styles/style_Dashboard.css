@@ -457,6 +457,7 @@ li{
     height: 50px;
     width: 50px;
     border-radius: 16px;
+    margin: 0px 5px;
   }
 
 
@@ -470,7 +471,6 @@ li{
 
   .right_side_profile_info{
       display: flex;
-      width: 150px;
       justify-content: space-between;
       font-family: 'Poppins';
       font-weight: 300;

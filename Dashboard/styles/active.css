@@ -1,0 +1,22 @@
+[data-set-target]{
+    display: none;
+}
+
+
+.active[data-set-target]{
+    display: block;
+}
+
+.tab.active{
+    background-color: #fd566c;
+    color: white;
+    border-radius: 6px;
+}
+
+.active_social{
+    display: flex;
+}
+
+.not_active_social{
+    display: none;
+}

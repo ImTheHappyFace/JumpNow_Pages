@@ -17,3 +17,29 @@ function closeMenu() {
    }
 
 
+
+
+var tabs = document.querySelectorAll('[data-set-tab]')
+var tabContents = document.querySelectorAll('[data-set-target]')
+var socialContent = document.getElementById('social_icons')
+
+tabs.forEach(function(tab){
+    tab.addEventListener('click' , function(){
+        const target = document.querySelector(tab.dataset.setTab)
+            if(target.id == "dashboard"){
+               socialContent.classList.remove('not_active_social') 
+            }
+            else{
+                socialContent.classList.add('not_active_social')
+            }
+        tabContents.forEach(function(tabContent){
+            tabContent.classList.remove('active')
+        })
+        tabs.forEach(function(tab){
+            tab.classList.remove('active')
+        })
+        tab.classList.add('active')
+
+        target.classList.add('active')
+    })
+})
