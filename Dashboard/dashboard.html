@@ -64,11 +64,11 @@
                                 </div>
                                 <!--  -->
                             </div>
-                            <li><a class="menu__item" href="#dashboard">
+                            <li><a class="menu__item" href="#dashboard"  data-set-target="#dashboard">
                                     <div class="icon_sidebar"><i class="fas fa-chart-line icons_sidebar"></i></div>
                                     Dashboard
                                 </a></li>
-                            <li><a class="menu__item" href="#">
+                            <li><a class="menu__item" href="#" data-set-target="#campaigns">
                                     <div class="icon_sidebar"><i class="far fa-folder-open icons_camp"></i> </div>
                                     Campaigns
                                 </a>
@@ -204,7 +204,7 @@
 
 
     <main class="dyn_content" id="dashboard">
-        <section class="main_content">
+        <section class="main_content" data-set-target>
             <div class="heading">
                 <span>
                     "Active campaigns"
@@ -226,6 +226,10 @@
                 </div>
             </div>
 
+        </section>
+
+        <section id="#campaigns" data-set-target>
+            Hello
         </section>
     </main>
 

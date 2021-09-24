@@ -5,35 +5,6 @@
   padding: 0;
 }
 
-/* .icons_card::after{
-    content: " ";
-    display:block ;
-    position: relative;
-    height: 3px;
-    background: black;
-    width: 27px;
-    right: 38%;
-    top: calc(79% + 19px);
-    z-index: -1;
-} */
-
-/* .card_1::after{
-    background: blue;
-}
-
-.card_3::after{
-    background-color: orange;
-}
-
-.card_2::after{
-    background-color: lightblue;
-}
-
-.card_4::after{
-    background-color: red;
-} */
-
-
 .main_static {
   padding: 15px 20px;
   display: flex;
@@ -71,6 +42,7 @@ button {
   display: flex;
   justify-content: space-between;
   margin-bottom: 24px;
+  width: 98%;
 }
 
 .menu_text {
@@ -244,7 +216,7 @@ button {
 .menu__item:hover {
   background-color: #fd566c;
   color: white;
-  border-radius: 3px 6px;
+  border-radius: 6px;
 }
 
 .menu__item i {
@@ -551,7 +523,6 @@ li{
     .icons_card .card_1{
         margin-right: 10px;
     }
-}
 
 
 
